@@ -1,0 +1,183 @@
+
+
+{
+    "data": [
+      {
+        "id": "987625",
+        "type": "activities",
+        "links": {
+          "self": "http://example.org/user_api/v1/activities/987625"
+        },
+        "attributes": {
+          "activity_category": null,
+          "application_method": null,
+          "approved": false,
+          "area": "28 acre",
+          "author_company_id": 987913,
+          "author_company_name": "Grow Co",
+          "author_user_id": 987123,
+          "author_user_name": "Grow Joe",
+          "band": null,
+          "chemical_cost": "135.974 dollar",
+          "comments": null,
+          "company_id": 987913,
+          "company_name": "Grow Co",
+          "completed": true,
+          "completed_at": "2011-06-15T10:30:00.000+08:00",
+          "cost_per_area": "4.85623 dollar/acre",
+          "created_at": "2011-06-15T10:30:00.000+08:00",
+          "created_on": "web",
+          "droplet_size": null,
+          "due_at": null,
+          "expiration_date": null,
+          "farm_assets": [
+            {
+              "id": 987634,
+              "name": "Truck",
+              "description": "Vehicle.",
+              "category": "Vehicle"
+            }
+          ],
+          "fertilizer_cost": "0 dollar",
+          "humidity": null,
+          "nozzle_type": null,
+          "operator_company_id": 987913,
+          "operator_company_name": "Grow Co",
+          "operator_company_licenses": [
+            {
+              "name": "TEST COMPANY LICENSE",
+              "description": "description",
+              "authority": "",
+              "number": "12345",
+              "valid_from": "2011-03-15",
+              "valid_to": "2012-03-15"
+            }
+          ],
+          "operation_cost": "0 dollar",
+          "operator_users": [
+            {
+              "id": 987123,
+              "name": "Grow Joe",
+              "licenses": [
+                {
+                  "name": "TEST USER LICENSE",
+                  "description": "description",
+                  "authority": "",
+                  "number": "34567",
+                  "valid_from": "2011-03-15",
+                  "valid_to": "2012-03-15"
+                }
+              ]
+            }
+          ],
+          "parent_id": -1,
+          "reason_name": null,
+          "reason_text": null,
+          "season_phase": null,
+          "seed_cost": "0 dollar",
+          "skip_row": null,
+          "specialisation": "general",
+          "started_at": null,
+          "tags": [
+            "Test 0",
+            "Test 1"
+          ],
+          "temperature": null,
+          "timing": null,
+          "title": "Summer Knockdown 1",
+          "total_cost": "135.974 dollar",
+          "total_volume": "209.537 gal",
+          "activity_type": "ActualActivity",
+          "updated_at": "2014-06-15T10:30:00.000+08:00",
+          "water_rate": "7.48346 gal/acre",
+          "weather_conditions": null,
+          "wind_direction": null,
+          "wind_speed": null,
+          "activity_inputs": [
+            {
+              "activity_input_order": 0,
+              "cost_per_area": "4.85623 dollar/acre",
+              "grazing_interval": null,
+              "harvest_interval": null,
+              "input_name": "Product Turf",
+              "input_type": "Product",
+              "cost_activity_id": null,
+              "crop_variety_id": null,
+              "product_id": 987622,
+              "mix_method": "per_area",
+              "plantback_interval": null,
+              "product_categories": [],
+              "product_substance": "liquid",
+              "rain_fast_interval": null,
+              "rate": "1 mL/ha",
+              "re_entry_interval": null,
+              "stockfeed_inverval": null,
+              "tags": [],
+              "total_area": "0 acre",
+              "total_cost": "135.974 dollar",
+              "total_count": "0 each",
+              "total_time": "0 h",
+              "total_volume": "0.00299339 gal",
+              "total_weight": "0 lbs",
+              "unit_cost": "12 dollar/mL"
+            }
+          ],
+          "activity_fields": [
+            {
+              "area": "28 acre",
+              "area_ratio": 1.0,
+              "chemical_cost": "135.974 dollar",
+              "crops": [],
+              "crop_stage": null,
+              "farm_id": 987623,
+              "farm_name": "Sunny Downs",
+              "fertilizer_cost": "0 dollar",
+              "field_id": 987101,
+              "field_name": "Field 1",
+              "operation_cost": "0 dollar",
+              "seed_cost": "0 dollar",
+              "season_id": 987911,
+              "season_phase": null,
+              "total_cost": "135.974 dollar"
+            }
+          ],
+          "activity_problems": [
+            {
+              "description": "Danger",
+              "infestation": null,
+              "pest_name": "Insects",
+              "severity": null,
+              "stage": "2 leaf"
+            }
+          ],
+          "activity_harvest": {},
+          "job_activities": [
+            {
+              "activity_id": 987627,
+              "activity_type": "WorkOrder",
+              "author_user_name": "Grow Joe",
+              "author_user_id": 987123,
+              "author_company_name": "Grow Co",
+              "author_company_id": 987913
+            }
+          ],
+          "job_id": 978111,
+          "job_status": "complete",
+          "colour_id": 1,
+          "colour_name": "Red"
+        },
+        "relationships": {
+          "company": {
+            "links": {
+              "self": "http://example.org/user_api/v1/activities/987625/relationships/company",
+              "related": "http://example.org/user_api/v1/activities/987625/company"
+            }
+          }
+        }
+      }
+    ],
+    "links": {
+      "first": "http://example.org/user_api/v1/activities?filter%5Bname%5D=Summer+Knockdown+1\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=10",
+      "last": "http://example.org/user_api/v1/activities?filter%5Bname%5D=Summer+Knockdown+1\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=10"
+    }
+  }

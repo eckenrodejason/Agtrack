@@ -1,0 +1,347 @@
+
+
+{
+    "data": [
+      {
+        "id": "829432",
+        "type": "collection_jobs",
+        "links": {
+          "self": "http://example.org/user_api/v1/collection_jobs/829432"
+        },
+        "attributes": {
+          "assigned_company_id": 987914,
+          "assigned_company_name": "Sample Collector Company",
+          "assigned_user_id": null,
+          "assigned_user_name": null,
+          "author_company_id": 987913,
+          "author_company_name": "Grow Co",
+          "author_user_id": 987123,
+          "author_user_name": "Grow Joe",
+          "auto_run_surfacing": false,
+          "comments": null,
+          "company_address": "123 co street, Belmont, California, 72354, United States",
+          "company_email": "grow.co@farmingproductions.com",
+          "company_id": 987913,
+          "company_name": "Grow Co",
+          "company_phone_number": "+15417543010",
+          "created_at": "2011-06-15T10:30:00.000+08:00",
+          "estimated_sample_count": 3,
+          "farm_id": 987623,
+          "farm_name": "Sunny Downs",
+          "field_area": "11.3312 ha",
+          "field_boundary": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    171.9124,
+                    -43.89123
+                  ],
+                  [
+                    171.9144,
+                    -43.89493
+                  ],
+                  [
+                    171.9134,
+                    -43.89135
+                  ],
+                  [
+                    171.9124,
+                    -43.89123
+                  ]
+                ]
+              ]
+            ]
+          },
+          "field_id": 987101,
+          "field_name": "Field 1",
+          "planned_collection_date": null,
+          "sampled_at": "2011-06-10T10:30:00.000+08:00",
+          "season_id": 987911,
+          "season_name": "2010",
+          "status": "Ready to collect",
+          "state_updated_at": null,
+          "strategy": "grid",
+          "updated_at": "2011-06-15T10:30:00.000+08:00",
+          "lab_details": {
+            "account_number": "AN8524",
+            "purchase_order_number": "PO8524",
+            "address": "123 lab st, Berkeley, California, 91734, United States",
+            "email": null,
+            "id": 245924,
+            "name": "Soil Lab Display Name",
+            "phone_number": "+15417543010"
+          },
+          "requested_points": null,
+          "sampling_grid": {
+            "id": 72644,
+            "angle": 104.238246,
+            "grid_size": "5.26091 ha",
+            "origin": {
+              "type": "Point",
+              "coordinates": [
+                171.91249,
+                -43.89123
+              ]
+            }
+          },
+          "previous_sampled_date": "2011-06-17T10:30:00.000+08:00",
+          "previous_samples": [
+            {
+              "type": "Point",
+              "coordinates": [
+                171.91245,
+                -43.89129
+              ]
+            }
+          ],
+          "planned_depths": [
+            {
+              "min_depth": "0 cm",
+              "max_depth": "20 cm",
+              "surface_this_depth": true,
+              "lab_test": [],
+              "samples": [
+                {
+                  "id": 623512,
+                  "actual_min_depth": "0 cm",
+                  "actual_max_depth": "20 cm",
+                  "barcode": "XH23A32K395A983",
+                  "analysed_at": "2011-06-12T10:30:00.000+08:00",
+                  "created_at": "2011-06-15T10:30:00.000+08:00",
+                  "updated_at": "2011-06-15T10:30:00.000+08:00",
+                  "lab_code": null,
+                  "location": {
+                    "type": "Point",
+                    "coordinates": [
+                      171.91245,
+                      -43.89129
+                    ]
+                  },
+                  "sample_type": "soil",
+                  "results": {
+                    "S-CACO3.15": "3 %",
+                    "S-P-B2-1:10.01.03": "2 lbs/acre"
+                  }
+                }
+              ]
+            }
+          ],
+          "job_state_history": [
+            {
+              "created_at": "2011-06-15T10:30:00.000+08:00",
+              "old_status": "Not ready",
+              "new_status": "Ready to collect",
+              "user_id": null,
+              "user_name": "Automatic"
+            }
+          ],
+          "manual_upload": false
+        },
+        "relationships": {
+          "company": {
+            "links": {
+              "self": "http://example.org/user_api/v1/collection_jobs/829432/relationships/company",
+              "related": "http://example.org/user_api/v1/collection_jobs/829432/company"
+            }
+          },
+          "field": {
+            "links": {
+              "self": "http://example.org/user_api/v1/collection_jobs/829432/relationships/field",
+              "related": "http://example.org/user_api/v1/collection_jobs/829432/field"
+            }
+          },
+          "season": {
+            "links": {
+              "self": "http://example.org/user_api/v1/collection_jobs/829432/relationships/season",
+              "related": "http://example.org/user_api/v1/collection_jobs/829432/season"
+            }
+          }
+        }
+      },
+      {
+        "id": "829482",
+        "type": "collection_jobs",
+        "links": {
+          "self": "http://example.org/user_api/v1/collection_jobs/829482"
+        },
+        "attributes": {
+          "assigned_company_id": 987914,
+          "assigned_company_name": "Sample Collector Company",
+          "assigned_user_id": null,
+          "assigned_user_name": null,
+          "author_company_id": 987913,
+          "author_company_name": "Grow Co",
+          "author_user_id": 987123,
+          "author_user_name": "Grow Joe",
+          "auto_run_surfacing": true,
+          "comments": null,
+          "company_address": "123 co street, Belmont, California, 72354, United States",
+          "company_email": "grow.co@farmingproductions.com",
+          "company_id": 987913,
+          "company_name": "Grow Co",
+          "company_phone_number": "+15417543010",
+          "created_at": "2011-06-15T10:30:00.000+08:00",
+          "estimated_sample_count": 3,
+          "farm_id": 987623,
+          "farm_name": "Sunny Downs",
+          "field_area": "11.3312 ha",
+          "field_boundary": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    171.9124,
+                    -43.89123
+                  ],
+                  [
+                    171.9144,
+                    -43.89493
+                  ],
+                  [
+                    171.9134,
+                    -43.89135
+                  ],
+                  [
+                    171.9124,
+                    -43.89123
+                  ]
+                ]
+              ]
+            ]
+          },
+          "field_id": 987101,
+          "field_name": "Field 1",
+          "planned_collection_date": null,
+          "sampled_at": "2011-06-17T10:30:00.000+08:00",
+          "season_id": 987911,
+          "season_name": "2010",
+          "status": "Lab analysis complete",
+          "state_updated_at": "2011-06-20T10:30:00.000+08:00",
+          "strategy": "grid",
+          "updated_at": "2011-06-15T10:30:00.000+08:00",
+          "lab_details": {
+            "account_number": "AN8524",
+            "purchase_order_number": "PO8524",
+            "address": "123 lab st, Berkeley, California, 91734, United States",
+            "email": null,
+            "id": 245924,
+            "name": "Soil Lab Display Name",
+            "phone_number": "+15417543010"
+          },
+          "requested_points": null,
+          "sampling_grid": {
+            "id": 72644,
+            "angle": 104.238246,
+            "grid_size": "5.26091 ha",
+            "origin": {
+              "type": "Point",
+              "coordinates": [
+                171.91249,
+                -43.89123
+              ]
+            }
+          },
+          "previous_sampled_date": "2011-06-10T10:30:00.000+08:00",
+          "previous_samples": [
+            {
+              "type": "Point",
+              "coordinates": [
+                171.91245,
+                -43.89129
+              ]
+            }
+          ],
+          "planned_depths": [
+            {
+              "min_depth": "0 cm",
+              "max_depth": "20 cm",
+              "surface_this_depth": true,
+              "lab_test": [
+                {
+                  "code": "TEST-SUITE-1",
+                  "description": "Test Suite Description",
+                  "display_name": "Test Suite 1 Display",
+                  "sample_type": "soil"
+                }
+              ],
+              "samples": [
+                {
+                  "id": 623612,
+                  "actual_min_depth": "0 cm",
+                  "actual_max_depth": "20 cm",
+                  "barcode": "XH23A32K392A983",
+                  "analysed_at": "2011-06-18T10:30:00.000+08:00",
+                  "created_at": "2011-06-15T10:30:00.000+08:00",
+                  "updated_at": "2011-06-15T10:30:00.000+08:00",
+                  "lab_code": null,
+                  "location": {
+                    "type": "Point",
+                    "coordinates": [
+                      171.91245,
+                      -43.89129
+                    ]
+                  },
+                  "sample_type": "soil",
+                  "results": {
+                    "S-CACO3.15": "3 %",
+                    "S-P-B2-1:10.01.03": "2 lbs/acre"
+                  }
+                }
+              ]
+            }
+          ],
+          "job_state_history": [
+            {
+              "created_at": "2011-06-15T10:30:00.000+08:00",
+              "old_status": "Not ready",
+              "new_status": "Ready to collect",
+              "user_id": null,
+              "user_name": "Automatic"
+            },
+            {
+              "created_at": "2011-06-15T10:30:00.000+08:00",
+              "old_status": "Ready to collect",
+              "new_status": "Submitted to lab",
+              "user_id": null,
+              "user_name": "Automatic"
+            },
+            {
+              "created_at": "2011-06-15T10:30:00.000+08:00",
+              "old_status": "Submitted to lab",
+              "new_status": "Lab analysis complete",
+              "user_id": null,
+              "user_name": "Automatic"
+            }
+          ],
+          "manual_upload": false
+        },
+        "relationships": {
+          "company": {
+            "links": {
+              "self": "http://example.org/user_api/v1/collection_jobs/829482/relationships/company",
+              "related": "http://example.org/user_api/v1/collection_jobs/829482/company"
+            }
+          },
+          "field": {
+            "links": {
+              "self": "http://example.org/user_api/v1/collection_jobs/829482/relationships/field",
+              "related": "http://example.org/user_api/v1/collection_jobs/829482/field"
+            }
+          },
+          "season": {
+            "links": {
+              "self": "http://example.org/user_api/v1/collection_jobs/829482/relationships/season",
+              "related": "http://example.org/user_api/v1/collection_jobs/829482/season"
+            }
+          }
+        }
+      }
+    ],
+    "links": {
+      "first": "http://example.org/user_api/v1/collection_jobs?page%5Bnumber%5D=1\u0026page%5Bsize%5D=10",
+      "last": "http://example.org/user_api/v1/collection_jobs?page%5Bnumber%5D=1\u0026page%5Bsize%5D=10"
+    }
+  }

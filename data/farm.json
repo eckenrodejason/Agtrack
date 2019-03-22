@@ -1,0 +1,45 @@
+
+
+{
+  "data": {
+    "id": "987613",
+    "type": "farms",
+    "links": {
+      "self": "http://example.org/user_api/v1/farms/987613"
+    },
+    "attributes": {
+      "company_id": 987612,
+      "created_at": "2011-06-15T10:30:00.000+08:00",
+      "description": "Home Farm",
+      "location": {
+        "number": null,
+        "street": null,
+        "suburb": null,
+        "city": null,
+        "county": null,
+        "state": "Western Australia",
+        "postcode": null,
+        "country": "Australia",
+        "latitude": -29.0779350143255,
+        "longitude": 133.665562768221
+      },
+      "name": "Farm 1",
+      "reporting_region": "Farm 1",
+      "updated_at": "2011-06-15T10:30:00.000+08:00"
+    },
+    "relationships": {
+      "company": {
+        "links": {
+          "self": "http://example.org/user_api/v1/farms/987613/relationships/company",
+          "related": "http://example.org/user_api/v1/farms/987613/company"
+        }
+      },
+      "fields": {
+        "links": {
+          "self": "http://example.org/user_api/v1/farms/987613/relationships/fields",
+          "related": "http://example.org/user_api/v1/farms/987613/fields"
+        }
+      }
+    }
+  }
+}

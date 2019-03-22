@@ -1,0 +1,48 @@
+
+
+{
+    "data": {
+      "id": "987654",
+      "type": "fields",
+      "links": {
+        "self": "http://example.org/user_api/v1/fields/987654"
+      },
+      "attributes": {
+        "application_cost": null,
+        "area": null,
+        "boundary": null,
+        "chemical_cost": null,
+        "contractor_cost": null,
+        "created_at": "2011-06-15T10:30:00.000+08:00",
+        "crops": null,
+        "cropping_method": "dryland",
+        "description": "Field description",
+        "farm_id": 987654,
+        "fertilizer_cost": null,
+        "field_group_id": 987654,
+        "gross_margin": null,
+        "harvested_area": null,
+        "harvested_weight": null,
+        "harvest_date": null,
+        "irrigation": "Pivot",
+        "name": "Field 1",
+        "other_cost": null,
+        "other_income": null,
+        "plant_spacing": "15 cm",
+        "planting_date": null,
+        "row_spacing": "20 cm",
+        "season_id": null,
+        "seed_cost": null,
+        "updated_at": "2011-06-15T10:30:00.000+08:00",
+        "yield_price": null
+      },
+      "relationships": {
+        "farm": {
+          "links": {
+            "self": "http://example.org/user_api/v1/fields/987654/relationships/farm",
+            "related": "http://example.org/user_api/v1/fields/987654/farm"
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+
+
+{
+    "data": [
+      {
+        "id": "987656",
+        "type": "seasons",
+        "links": {
+          "self": "http://example.org/user_api/v1/seasons/987656"
+        },
+        "attributes": {
+          "approved": null,
+          "company_id": 987656,
+          "created_at": "2011-06-15T10:30:00.000+08:00",
+          "name": "2016",
+          "season_end_date": "2011-12-31",
+          "season_start_date": "2011-01-01",
+          "updated_at": "2011-06-15T10:30:00.000+08:00"
+        },
+        "relationships": {
+          "company": {
+            "links": {
+              "self": "http://example.org/user_api/v1/seasons/987656/relationships/company",
+              "related": "http://example.org/user_api/v1/seasons/987656/company"
+            }
+          },
+          "fields": {
+            "links": {
+              "self": "http://example.org/user_api/v1/seasons/987656/relationships/fields",
+              "related": "http://example.org/user_api/v1/seasons/987656/fields"
+            }
+          },
+          "activities": {
+            "links": {
+              "self": "http://example.org/user_api/v1/seasons/987656/relationships/activities",
+              "related": "http://example.org/user_api/v1/seasons/987656/activities"
+            }
+          }
+        }
+      }
+    ],
+    "links": {
+      "first": "http://example.org/user_api/v1/seasons?filter%5Bname%5D=2016\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=10",
+      "last": "http://example.org/user_api/v1/seasons?filter%5Bname%5D=2016\u0026page%5Bnumber%5D=1\u0026page%5Bsize%5D=10"
+    }
+  }
