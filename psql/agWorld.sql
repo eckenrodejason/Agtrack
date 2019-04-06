@@ -13,11 +13,11 @@ SELECT column1, column_2
 FROM table2
 WHERE someCondition;
 
-UPDATE table
+UPDATE table1
 SET column1 = value1,
     column2 = value2;
-Where someCondition;
+WHERE someCondition;
 
 
-DELETE FROM table
+DELETE FROM table1
 WHERE someCondition; 
