@@ -6,12 +6,15 @@ const Header = () => (
     <NavLink to="/" activeClassName="is-active" exact={true}>
       Home
     </NavLink>
-    <NavLink to="/fields" activeClassName="is-active">
+    {/*Shows FieldList*/}
+    <NavLink to="/field-list" activeClassName="is-active">
       Fields
     </NavLink>
-    <NavLink to="/jobs" activeClassName="is-active">
+    {/*Shows JobList*/}
+    <NavLink to="/job-list" activeClassName="is-active">
       Jobs
     </NavLink>
+    
   </header>
 );
 
