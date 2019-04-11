@@ -21,11 +21,16 @@ module.exports = {
         loader: "babel-loader",
         test: /\.js$/, //regex shit...basically says to run files that end in .js
         exclude: /node_modules/ //more regex stuff says don't run anything in node_modules
+      },
+      {
+        test: /\.s?css$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
   devtool: "cheap-module-eval-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public")
+    contentBase: path.join(__dirname, "public"),
+    historyApiFallback: true
   }
 };
