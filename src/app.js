@@ -1,14 +1,43 @@
-// install -> import -> use
-import React from "react";
-import ReactDOM from "react-dom";
-import "normalize.css/normalize.css";
-import "./styles/styles.scss";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import AppRouter, { history } from './routers/AppRouter';
+import configureStore from './store/configureStore';
+import { startSetExpenses } from './actions/expenses';
+import { login, logout } from './actions/auth';
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
+import 'react-dates/lib/css/_datepicker.css';
+import { firebase } from './firebase/firebase';
 
-//The following are imports from other classes 4/10/19
-import Field from "./components/Fields/Field";
-import Home from "./components/Home";
-import Job from "./components/Jobs/Job";
-import AppRouter from "./routers/AppRouter";
-// end import of classes
+const store = configureStore();
+const jsx = (
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+);
+let hasRendered = false;
+const renderApp = () => {
+  if (!hasRendered) {
+    ReactDOM.render(jsx, document.getElementById('app'));
+    hasRendered = true;
+  }
+};
 
-ReactDOM.render(<AppRouter />, document.getElementById("app"));
+ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    store.dispatch(login(user.uid));
+    store.dispatch(startSetExpenses()).then(() => {
+      renderApp();
+      if (history.location.pathname === '/') {
+        history.push('/home');
+      }
+    });
+  } else {
+    store.dispatch(logout());
+    renderApp();
+    history.push('/');
+  }
+});
