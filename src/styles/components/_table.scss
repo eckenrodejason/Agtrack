@@ -5,10 +5,11 @@
 }
 
 .home-table-title {
-  position: relative;
-  right: 1.3em;
-  padding-top: 9px;
-  padding-left: 3px;
+  text-align: center;
+}
+
+.home-table-layout {
+  border: 5px solid #346d4e;
 }
 
 .home-table-layout thead {
@@ -21,16 +22,7 @@
   //border-collapse: collapse;
   border-right: 1px solid black;
   border-top: 1px solid black;
-}
-
-.home-table-layout {
-  position: relative;
-  top: -28.1em;
-  right: 3.5em;
-  border: 5px solid #346d4e;
-  border-radius: 5px;
-  width: 45%;
-  float: right;
+  border-left: 1px solid black;
 }
 
 .my-custom-scrollbar {

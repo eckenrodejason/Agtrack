@@ -20,28 +20,30 @@ export default class HomeTable extends React.Component {
   render() {
     const { title } = this.state;
     return (
-      <div className="home-table-layout table-wrapper-scroll-y my-custom-scrollbar">
-        <h2 className=".home-table-title">All Field Data</h2>
-        <Table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Field Name</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {title.map(title => {
-              return (
-                <tr key={title.id}>
-                  <Td to={`/field/${title.id}`}>{title.id}</Td>
-                  <Td to={`/field/${title.id}`}>{title.title}</Td>
-                  <td>{title.body}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </Table>
+      <div>
+        <h2 className="home-table-title">All Field Data</h2>
+        <div className="table-wrapper-scroll-y my-custom-scrollbar">
+          <Table className="home-table-layout">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Field Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {title.map(title => {
+                return (
+                  <tr key={title.id}>
+                    <Td to={`/field/${title.id}`}>{title.id}</Td>
+                    <Td to={`/field/${title.id}`}>{title.title}</Td>
+                    <td>{title.body}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </Table>
+        </div>
       </div>
     );
   }

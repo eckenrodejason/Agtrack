@@ -10,12 +10,11 @@ let id = 0;
 }
 const Job = props => {
   return (
-    <div>
-      <header className="header">
+    <div className="page-header">
+      <div className="content-container">
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <h1 className="header__title">Job {props.match.params.id}</h1>
-      </header>
-      Showing details for the job with the id of {props.match.params.id}
+        <h1>Details for Job {props.match.params.id}</h1>
+      </div>
     </div>
   );
 };

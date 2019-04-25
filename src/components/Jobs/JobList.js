@@ -5,12 +5,12 @@ import React from "react";
 }
 const JobList = props => {
   return (
-    <div>
-      <header className="header">
+    <div className="page-header">
+      <div className="content-container">
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <h1 className="header__title">Jobs</h1>
-      </header>
-      Showing all jobs
+        <h1>Jobs</h1>
+        Showing all jobs
+      </div>
     </div>
   );
 };

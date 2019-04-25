@@ -10,12 +10,11 @@ const key = "RGGynVWPBg-Frz-7E48tAA";
 }
 const Field = props => {
   return (
-    <div>
-      <header className="header">
+    <div className="page-header">
+      <div className="content-container">
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <h1 className="header__title">Field {props.match.params.id}</h1>
-      </header>
-      Showing details for the field with the id of {props.match.params.id}
+        <h1>Details for Field {props.match.params.id}</h1>
+      </div>
     </div>
   );
 };

@@ -8,13 +8,15 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <header className="header">
-          <h1 className="header-title"> Welcome to Agtrack</h1>
-        </header>
+        <div className="flex-container">
+          <div>
+            <HomeMap />
+          </div>
+          <div>
+            <HomeTable />
+          </div>
+        </div>
 
-        <h2 className="map-title">Field Map</h2>
-        <HomeMap />
-        <HomeTable />
         {/* 
         <button className="button" onClick={this.handleClick}>
           Show Field ID's
