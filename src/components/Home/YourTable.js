@@ -13,34 +13,30 @@ export default class HomeTable extends React.Component {
 
   componentDidMount() {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then(response => this.setState({ title: response.data }));
+      .get("https://jsonplaceholder.typicode.com/comments")
+      .then(response => this.setState({ title: response.data[224] }));
     //to render single key(title,id,body,etc) from first array in object, do title: response.data[0]
   }
   render() {
     const { title } = this.state;
     return (
       <div>
-        <h2 className="home-table-title">Your Stats</h2>
+        <h2 className="home-table-title">{`${title.name}'s Stats`}</h2>
         <div className="table-wrapper-scroll-y my-custom-scrollbar">
           <Table className="home-table-layout">
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Field Name</th>
-                <th>Description</th>
+                <th>User</th>
+                <th>Your Fields</th>
+                <th>Your Jobs</th>
               </tr>
             </thead>
             <tbody>
-              {title.map(title => {
-                return (
-                  <tr key={title.id}>
-                    <Td to={`/field/${title.id}`}>{title.id}</Td>
-                    <Td to={`/field/${title.id}`}>{title.title}</Td>
-                    <td>{title.body}</td>
-                  </tr>
-                );
-              })}
+              <Td to={`/home`}>{title.id}</Td>
+              <td>{title.email}</td>
+              <Td to={`/field-list`}>{title.name}</Td>
+              <Td to={`/job-list`}>{title.body}</Td>
             </tbody>
           </Table>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import HomeTable from "./HomeTable";
+import YourTable from "./YourTable";
 import HomeMap from "./HomeMap";
 
 //style={{ cursor: "pointer" }}
@@ -13,7 +13,7 @@ export default class Home extends React.Component {
             <HomeMap />
           </div>
           <div>
-            <HomeTable />
+            <YourTable />
           </div>
         </div>
 
