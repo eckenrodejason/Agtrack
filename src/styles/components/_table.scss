@@ -1,0 +1,37 @@
+.home-table-title {
+  position: relative;
+  right: 1.3em;
+  padding-top: 9px;
+  padding-left: 3px;
+}
+
+.home-table-layout thead {
+  background-color: #346d4e;
+  border-bottom: 2.5px solid black;
+  text-align: center;
+}
+
+.home-table-layout td {
+  //border-collapse: collapse;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.home-table-layout {
+  position: relative;
+  top: -47em;
+  right: 3.5em;
+  border: 5px solid #346d4e;
+  border-radius: 3px;
+  width: 45%;
+  float: right;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 442px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
