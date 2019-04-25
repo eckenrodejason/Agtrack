@@ -1,6 +1,7 @@
 .map-title {
   position: relative;
   left: 2.5em;
+
 }
 
 .resp-iframe {
@@ -8,8 +9,7 @@
   color: #346d4e;
   border-width: 5px;
   border-radius: 5px;
-  position: absolute;
-  top: 0;
+  position: relative;
   left: 3em;
   width: 500px;
   height: 400px;
@@ -18,5 +18,4 @@
 .resp-container {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
 }

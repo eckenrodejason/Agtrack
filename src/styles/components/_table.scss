@@ -1,3 +1,9 @@
+.content {
+  display: block;
+  color: inherit;
+  padding: 5px 10px;
+}
+
 .home-table-title {
   position: relative;
   right: 1.3em;
@@ -13,16 +19,16 @@
 
 .home-table-layout td {
   //border-collapse: collapse;
-  border-left: 1px solid black;
+  border-right: 1px solid black;
   border-top: 1px solid black;
 }
 
 .home-table-layout {
   position: relative;
-  top: -47em;
+  top: -28.1em;
   right: 3.5em;
   border: 5px solid #346d4e;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 45%;
   float: right;
 }
