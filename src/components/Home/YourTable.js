@@ -13,30 +13,37 @@ export default class HomeTable extends React.Component {
 
   componentDidMount() {
     axios
-      .get("https://jsonplaceholder.typicode.com/comments")
-      .then(response => this.setState({ title: response.data[224] }));
+      .get(
+        "https://us.agworld.co//user_api/v1/fields?api_token=wFdJRAHjwzylncYDdwrcKw"
+      )
+      .then(response => this.setState({ title: response.data.data }));
+    //this.setState({ title: response.data.data[0].attributes })
     //to render single key(title,id,body,etc) from first array in object, do title: response.data[0]
   }
   render() {
     const { title } = this.state;
     return (
       <div>
-        <h2 className="home-table-title">{`${title.name}'s Stats`}</h2>
+        <h2 className="home-table-title">User Stats</h2>
         <div className="table-wrapper-scroll-y my-custom-scrollbar">
           <Table className="home-table-layout">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>User</th>
-                <th>Your Fields</th>
-                <th>Your Jobs</th>
+                <th />
+                <th>Assigned Fields</th>
+                <th>Assigned Jobs</th>
               </tr>
             </thead>
             <tbody>
-              <Td to={`/home`}>{title.id}</Td>
-              <td>{title.email}</td>
-              <Td to={`/field-list`}>{title.name}</Td>
-              <Td to={`/job-list`}>{title.body}</Td>
+              {title.map(title => {
+                return (
+                  <tr key={title.id}>
+                    <td>{title.id}</td>
+                    <td>{title.attributes.name}</td>
+                    <td>{title.attributes.job_status}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </Table>
         </div>

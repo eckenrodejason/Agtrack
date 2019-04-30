@@ -1,6 +1,7 @@
 import React from "react";
 import YourTable from "./YourTable";
 import HomeMap from "./HomeMap";
+import Test from "./Test"
 
 //style={{ cursor: "pointer" }}
 
@@ -8,6 +9,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
+
         <div className="flex-container">
           <div>
             <HomeMap />
@@ -15,7 +17,7 @@ export default class Home extends React.Component {
           <div>
             <YourTable />
           </div>
-        </div>
+    </div> 
 
         {/* 
         <button className="button" onClick={this.handleClick}>
