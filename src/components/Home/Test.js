@@ -11,7 +11,7 @@ class Test extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "https://us.agworld.co/user_api/v1/fields?api_token=wFdJRAHjwzylncYDdwrcKw"
+        "https://us.agworld.co/user_api/v1/fields?api_token=secret"
       )
       .then(response => console.log(response.data.data));
     //to render single key(title,id,body,etc) from first array in object, do title: response.data[0]
