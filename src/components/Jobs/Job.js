@@ -15,7 +15,7 @@ class Job extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "https://us.agworld.co/user_api/v1/activities?api_token=wFdJRAHjwzylncYDdwrcKw"
+        "https://us.agworld.co/user_api/v1/activities?api_token=secret"
       )
       .then(response =>
         this.setState({ title: response.data.data[1].attributes })
