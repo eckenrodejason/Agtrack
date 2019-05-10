@@ -14,7 +14,7 @@ export default class HomeTable extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "https://us.agworld.co//user_api/v1/fields?api_token=wFdJRAHjwzylncYDdwrcKw"
+        "https://us.agworld.co//user_api/v1/fields?api_token=secret"
       )
       .then(response => this.setState({ title: response.data.data }));
     //this.setState({ title: response.data.data[0].attributes })
